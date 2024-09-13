@@ -5,3 +5,5 @@ st.write("""
 This is my home page
 welcome
 """)
+
+print('test')

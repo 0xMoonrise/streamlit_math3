@@ -5,21 +5,14 @@ dashboard = st.Page(
 )
 
 notes = st.Page(
-    "notes/notes.py", title="Notes"
+    "content/manager.py", title="Differential Equations"
 )
 
+
+
 pg = st.navigation({
-            "Content": [dashboard, notes]
+    "Content": [dashboard, notes]
 })
-
-
-#pages = [st.Page(f"notes/{page}") for page in sorted(os.listdir('notes/'))]
-#plots = [st.Page(f"plots/{page}") for page in sorted(os.listdir('plots/'))]
-
-#pg = st.navigation({
-#    "Notes":pages,
-#    "Plots":plots
-#})
 
 pg.run()
 

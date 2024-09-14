@@ -7,7 +7,7 @@ def content():
     y'&=4-9x^2-6x^5; y(1) = 2 \\
     \end{aligned}
     $$
-    Separating variables, setting $y'=\frac{dy}{dx}$
+    Separating variables, with $y'$ set to $\frac{dy}{dx}$
     $$
     \begin{aligned}
     \frac{dy}{dx}&=4-9x^2-6x^5 \\

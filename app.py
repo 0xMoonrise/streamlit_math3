@@ -1,5 +1,4 @@
 import streamlit as st
-
 dashboard = st.Page(
     "home.py", title="Home", default=True
 )

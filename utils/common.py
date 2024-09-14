@@ -22,3 +22,12 @@ def dynamic_selectbox(path, message, placeholder):
         module = __import__(module_name, fromlist=['content'])
         page = getattr(module, 'content')
         page()
+
+def latex_eq(string):
+    return fr"""
+    $$
+    \begin{{aligned}}
+    {string}
+    \end{{aligned}}
+    $$
+    """

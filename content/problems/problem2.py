@@ -1,21 +1,26 @@
-def main():
+from utils.common import latex_eq
+def content():
     import streamlit as st
     import time
     import numpy as np
 
-#    st.markdown(f'# {list(page_names_to_funcs.keys())[1]}')
-    st.write(
-        """
-        This demo illustrates a combination of plotting and animation with
-Streamlit. We're generating a bunch of random numbers in a loop for around
-5 seconds. Enjoy!
-"""
-    )
-    st.sidebar.write('test')
-    option = st.sidebar.selectbox(
-    "**Problems homework 1.4:**",
-    [f'opt {n}' for n in range(1, 4)],
-    index=None,
-    placeholder="Choose a problem"
-    )
-    st.write(f'you selected {option}')
+    st.write("### Problem 2")
+    st.write("This problem is the same as the previous one.")
+    st.write(latex_eq(r"""
+    y'=4-9x^2-6x^4;\, y(1)=0
+    """))
+    st.write("It just changes the initial value")
+    st.write(latex_eq(r"""
+    y      &= 4x-3x^3-x^6+C_3 \\
+    0   &= 4(1)-3(1)^3-(1)^6+C_3 \\
+    0   &= 4-3-1+C_3 \\
+    0   &= 4-4+C_3 \\
+    0   &= 0+C_3 \\
+    0   &= C_3
+    """))
+    st.write("Particular solution when $C_3 = 0$")
+    st.write(latex_eq(r"""
+    y      &= 4x-3x^3-x^6 \\
+    """))
+    st.write("The verification is the same as the previous one.")
+    st.write("Consult **Problem 1** to review all the steps we followed.")

@@ -24,10 +24,10 @@ def dynamic_selectbox(path, message, placeholder):
         page()
 
 def latex_eq(string):
-    return fr"""
+    st.write(fr"""
     $$
     \begin{{aligned}}
     {string}
     \end{{aligned}}
     $$
-    """
+    """)

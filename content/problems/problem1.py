@@ -58,15 +58,13 @@ def content():
         it means there is an implicit **1**, such as: $1a = a$.
         """)
     st.write("Operating on the right-hand side:")
-    st.write(r"""
-    $$
+    st.latex(r"""
     \begin{aligned}
     \int{(4-9x^2-6x^5)dx} &= \int{4dx}-\int{9x^2dx}-\int{6x^5dx} \\
                           &= 4x-\frac{9x^3}{3}-\frac{6x^6}{6}+C_2 \\
                           &= 4x-\frac{\cancel{9}x^3}{\cancel{3}}-\frac{\cancel{6}x^6}{\cancel{6}}+C_2\\
                           &= 4x-3x^3-x^6+C_2
     \end{aligned}
-    $$
     """)
     with st.expander("**Calculus property**"):
         st.success(r"""$\int{(k\,\cdot u \pm w \cdot v )dx} = k\int{u\,dx}+w\int{v\,dx}+C$""")
@@ -122,3 +120,4 @@ def content():
         \end{aligned}
         $$
         """)
+    
